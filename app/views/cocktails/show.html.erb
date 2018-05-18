@@ -1,2 +1,19 @@
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('<%= @cocktail.picture_url %>');">
+  <div class="banner-content">
+    <h1 class = "cocktail-name"><%= @cocktail.name%> </h1>
+  </div>
+</div>
 
- <h1><%= @cocktail.name%> </h1>
+ <h3 class = "ingredients"> Ingredients </h3>
+ <% @cocktail.doses.each do |dose| %>
+ <div class = "contain">
+   <span class = "name" > <%= dose.ingredient.name %>- </span>
+   <span > <%= dose.description %> </span>
+   <span class = "delete"> <%= link_to "(Delete)", dose_path(dose), method: :delete %> </span>
+ </div>
+  <% end %>
+
+  <h3 class="btn-add"> <%= link_to "Add an ingredient", new_cocktail_dose_path(@cocktail)%> </h3>
+
+
+

@@ -1,7 +1,10 @@
-<%= form_for [@cocktail] do |f| %>
+<%= simple_form_for [@cocktail] do |f| %>
   <div>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+
+  <%= f.input :name %>
+
+  <%= f.input :picture_url %>
+
 </div>
 
   <%= f.submit %>
