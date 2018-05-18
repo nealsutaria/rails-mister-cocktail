@@ -3,7 +3,8 @@
 
   <%= f.input :name %>
 
-  <%= f.input :picture_url %>
+  <%= f.input :photo %>
+  <%= f.input :photo_cache, as: :hidden %>
 
 </div>
 
@@ -11,3 +12,4 @@
 <% end %>
 
 <%= link_to "Back", cocktails_path %>
+
