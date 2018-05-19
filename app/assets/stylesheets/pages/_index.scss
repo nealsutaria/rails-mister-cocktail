@@ -1,8 +1,10 @@
 // Import page-specific CSS files here.
 @import "home";
 @import "show";
+
+
 .card {
-  height: 175px;
+  height: 200px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-size: cover !important;
   background-position: center;
@@ -10,6 +12,7 @@
   position: relative;
   margin-top: 20px;
 }
+
 .card-description h3 {
   font-size: 14px;
   opacity: 0.7;
@@ -39,3 +42,26 @@ font-family: 'Playfair Display', serif;
   color: red;
 
 }
+
+
+
+.unique {
+  background-image: image-url("bar.jpg");
+}
+
+.card-footer{
+  background-color:rgba(29, 11, 11, 0.95) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
