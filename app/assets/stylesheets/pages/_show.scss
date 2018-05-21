@@ -5,7 +5,7 @@
 .name {
   font-family: 'Playfair Display', serif;
   font-weight: bold;
-  color: #0D867E;
+  color: #151b1a;
   font-size: 15px;
 }
 .delete {
@@ -15,7 +15,7 @@
   opacity: .5;
 }
 .delete a{
-  color: #00A797;
+  color: #151b1a;
 }
 .btn-add {
   color: white;
@@ -87,10 +87,12 @@ h2 a:hover{
   display: flex;
   align-items: center;
   justify-content: center;
+  zoom: 1.2;
 }
 
-
-
+.show {
+  background-color: #a26a6a !important;
+}
 
 
 
